@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<link href="style.css?v=1.1" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type='text/javascript' src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+var x = $(window).height();
+var s = $(this).scrollTop()
+
+if (s == 0) {
+
+	$(window).scroll(function(){ 
+	    $('.footer-face').height(x - (x * $(this).scrollTop() / $('.null').height()));
+	});
+};
+
+</script>
+
+<script>
+
+function ascrollto(id) {
+	var etop = $('#' + id).offset().top;
+	$('html, body').animate({
+	  scrollTop: etop
+	}, 1000);
+};
+</script>
+
+<!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-68937334-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-68937334-1');
+</script>
+
+<link rel="shortcut icon" type="image/png" href="favicon.png"/>
+
+</head>
+<body>
+
+<div class="scroll-nav">
+<script language="javascript">
+$(function () {
+  $(".toggle a").click(function () {
+    $(".toggle a").toggle()
+    $(".about-win").toggle()
+    $(".footer-face").toggle()
+  })
+});
+</script>
+	<ul>
+		<li>
+		<a href="/">Daniel</a>
+		</li>
+		<li>
+		
+		
+		<div class="toggle">
+			<a href="#" onclick="return false;" class="image" id="image1">Info</a>
+			<a href="#" onclick="return false;" class="image" id="image2" style="display:none; color: #fff;">Back</a>
+			<!--<img alt ="" src="Asset 19.svg" class="image" id="image1">
+			<img alt ="" src="Asset 18.svg" style="display:none;" class="image" id="image2">-->
+		</div>
+		</li>
+	</ul>
+</div>
+
+<div class="about-win">
+	<p>I'm Dan, a designer that likes to do a little bit of everything, learn new things, and make things move, especially for a cause.</p>
+	<p>Lately I've been binging <a target="blank" href="http://foreverdogproductions.com/fdpn/podcasts/las-culturistas/">Las Culturistas' "I Don't Think So, Honey!"</a> segments, <a target="blank" href="https://www.3dfordesigners.com/">3D for Designers</a>, and <a target="blank" href="http://comediansincarsgettingcoffee.com/">Comedians in Cars Getting Coffee</a> on Netflix.</p>
+	<p>Copyright 2018 Daniel Hyo Kim<br>Type set in GrilliType America Regular.</p>
+	<p><a href="danielhyokim-resume.pdf" target="_blank">Resumé</a><br>
+	<a href="mailto:h.kimdaniel@gmail.com" target="_blank">h.kimdaniel@gmail.com</a></p>
+</div>
+
+<div class="footer-face">
+	<img src="Asset 11.svg">
+</div>
+
+<div class="fixed-nav">
+	<ul>
+		<li>
+		<a href="danielhyokim-resume.pdf" target="_blank">Resumé</a>
+		</li>
+		<li>
+		<a href="/" onclick="ascrollto('content-scrollto');return false;">Back up!</a>
+		</li>
+	</ul>
+</div>
+
+<div class="content" id="content-scrollto">
+
+	<div class="column">          
+	    <div class="project">
+	        <a href="mind-the-matter.html"><img class="preview-img" src="mm/mm-thumb.jpg" alt="mm/mm-thumb.gif" data-orig="mm/mm-thumb.jpg"><h1>Mind the Matter</h1></a>
+	    </div>
+	</div>
+	<div class="column">
+	    <div class="project">
+	        <a href="here-the-hill.html"><img class="preview-img" src="hh/hh-hero.jpg" alt="hh/hover.gif" data-orig="hh/hh-hero.jpg"><h1>Here the Hill</h1></a>
+	    </div>
+	</div>
+	<div class="column">
+	    <div class="project">
+	        <a href="stott.html"><img class="preview-img" src="ac/stott.jpg" alt="ac/stott-2.jpg" data-orig="ac/stott.jpg"><h1>Faith in Strangers</h1></a>
+	    </div>
+	</div>
+	<div class="column">
+	    <div class="project">
+	        <a href="bowels.html"><img class="preview-img" src="bowels/bowels.jpg" alt="bowels/hover.gif" data-orig="bowels/bowels.jpg"><h1>Bowels of Humanity</h1></a>
+	    </div>
+	</div>
+	<div class="column">
+	    <div class="project">
+	        <a href="spicy-buns.html"><img class="preview-img" src="sb/logo.jpg" alt="sb/logo-animated.gif" data-orig="sb/logo.jpg"><h1>Spicy Buns</h1></a>
+	    </div>
+	</div>
+	<div class="column">
+	    <div class="project">
+	        <a href="shapes-edu.html"><img class="preview-img" src="edu/edu-img.png" alt="edu/edu-hero.gif" data-orig="edu/edu-img.png"><h1>Shapes Edu</h1></a>
+	    </div>
+	</div>
+	<div class="column">
+	    <div class="project">
+	        <a href="motion.html"><img class="preview-img" src="mn/daniel_rhythm-low.jpg" alt="mn/daniel_rhythm-low2.gif" data-orig="mn/daniel_rhythm-low.jpg"><h1>Motion</h1></a>
+	    </div>
+	</div>
+	<div class="column">
+	    <div class="project">
+	        <a href="more.html"><img class="preview-img" src="ow/more.jpg" alt="ow/more2.gif" data-orig="ow/more.jpg"><h1>Other works</h1></a>
+	    </div>
+	</div>
+
+</div>
+
+
+	<div class="footer">
+
+	</div>
+
+	<div class="footer2">
+
+	</div>
+
+
+<script>
+$('.column .project').hover(function(){
+  id = $(this).attr('id');
+  prevImg = $(this).find('.preview-img');
+  if (prevImg.attr('alt')) {
+      prevImg.attr('src', prevImg.attr('alt'));
+    }
+$('.video-details[data-id="' + id + '"]').addClass('show');
+}, function(){
+  prevImg = $(this).find('.preview-img');
+  prevImg.attr('src', prevImg.data('orig'));
+  $('.video-details').removeClass('show');
+});
+</script>
+
+
+<!--<div class="null">
+</div>-->
+
+</body>
+
+
+</html>
